@@ -29,15 +29,17 @@ public class Main {
 			}
 			
 			for(int j = listHuman.size() - 1; j >= 0; j--) {
-				if (listHuman.get(j).getHp() <= 0) {
-					System.out.println(listHuman.get(j).getName() + "は倒れた。");
+				Living v = listHuman.get(j);
+				if(listHuman.get(j).hp <= 0) {
+					System.out.println(listHuman.get(j).name + "は倒れた。");
 					listHuman.remove(j);
 				}
 			}
 			
 			for(int p = listMonster.size() - 1; p >= 0; p--) {
-				if (listMonster.get(p).getHp() <= 0) {
-					System.out.println(listMonster.get(p).getName() + "は倒れた。");
+				Living g = listMonster.get(p);
+				if(listMonster.get(p).hp <= 0) {
+					System.out.println(listMonster.get(p).name + "は倒れた。");
 					listMonster.remove(p);
 				}
 			}

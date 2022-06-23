@@ -18,14 +18,4 @@ public class Fighter extends Human {
 		target.hp -= damage;
 	}
 	
-	@Override
-	String getName() {
-		return this.name;
-	}
-	
-	@Override
-    int getHp() {
-		return this.hp;
-	}
-	
 }

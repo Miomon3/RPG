@@ -17,15 +17,5 @@ public class Brave extends Human {
 		System.out.println("勇者が剣で攻撃！" + target.name + "に" + damage + "のダメージを与えた。");
 		target.hp -= damage;
 	}
-	
-	@Override
-	String getName() {
-		return this.name;
-	}
-	
-	@Override
-    int getHp() {
-		return this.hp;
-	}
-	
+
 }
